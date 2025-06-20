@@ -1,0 +1,26 @@
+
+ <h3>Agregar: {{ name() }} - {{ power() }}</h3>
+
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Nombre"
+      [value]="name()"
+      (input)="name.set(txtName.value)"
+      #txtName
+    />
+
+    <input
+      type="number"
+      class="form-control mt-2"
+      placeholder="Poder"
+      [value]="power()"
+      (input)="power.set(+txtPower.value)"
+      #txtPower
+    />
+
+     <!-- * el evento (Input) me permite que se disparen los cambios apenas escriba en
+          * la caja en cambio el evento (change) se dispara cuando se sale de la caja de texto -->
+
+
+    <button class="mt-2 btn btn-primary" (click)="addCharacter()" >Agregar</button>

@@ -1,0 +1,27 @@
+
+nav  {
+ /* min-width: 100%; */
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: antiquewhite;
+  padding: 1rem;
+}
+
+
+div {
+  /* max-width: 40rem; */
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+   text-decoration: none;
+   padding: 5px;
+   color: white;
+}
+
+nav a.active {
+  /* background-color: brown; */
+  color: rgb(159, 127, 255);
+}
